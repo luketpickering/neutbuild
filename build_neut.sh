@@ -84,6 +84,7 @@ sed -i 's/^setenv CERN/#setenv CERN/g' EnvMakeneutsmpl.csh
 
 # Need to export NEUT_ROOT for Makeneutsmpl
 export NEUT_ROOT=${NEUT_ROOT}
+export FC=gfortran
 ./Makeneutsmpl.csh
 
 echo "CERN IS $CERN"
