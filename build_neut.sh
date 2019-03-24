@@ -156,6 +156,9 @@ NEUT_INSTALL_PREFIX=$(readlink -f .)
 mkdir -p bin; cd bin
 cp ${NEUT_ROOT}/src/neutsmpl/neutroot2 ./
 cd ../
+mkdir -p include; cd include
+cp ${NEUT_ROOT}/include/*.h ./
+cd ../
 mkdir -p etc/neut; cd etc/neut
 mkdir -p cards; cd cards
 cp ${NEUT_ROOT}/src/neutsmpl/Cards/*.card ./
